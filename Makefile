@@ -18,6 +18,8 @@ plan:
 apply:
 	terraform apply -input=false tfplan-${ACCOUNT}
 
+deploy: plan apply
+
 destroy:
 	@printf "🤔 Are you sure you want to destroy? Y/n " ; \
 	read -r confirm ; \

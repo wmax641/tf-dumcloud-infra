@@ -45,7 +45,7 @@ resource "aws_iam_policy" "ec2" {
         ]
         Resource = [
           aws_ssm_parameter.email_username.arn,
-          aws_ssm_parameter.email_passowrd.arn
+          aws_ssm_parameter.email_password.arn
         ]
       },
       {
